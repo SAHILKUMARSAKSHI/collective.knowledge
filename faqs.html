@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs</title>
+  <link href="css/faq.css" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .container {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .question {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .answercont {
+      margin-top: 5px;
+    }
+
+    .answer {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .answer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .answer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<h1>FAQs</h1>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="question">How do I verify my email?</div>
+    <div class="answercont">
+      <div class="answer">
+        Click the link in the verification email from verify@codepen.io (be sure to check your spam folder or other email tabs if it's not in your inbox).<br><br>
+        Or, send an email with the subject "Verify" to verify@codepen.io from the email address you use for your CodePen account.<br><br>
+        <a href="https://blog.codepen.io/documentation/features/email-verification/#how-do-i-verify-my-email-2" target="_blank">How to Verify Email Docs</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="question">My Pen loads infinitely or crashes the browser.</div>
+    <div class="answercont">
+      <div class="answer">
+        It's likely an infinite loop in JavaScript that we could not catch. To fix, add <code>?turn_off_js=true</code> to the end of the URL (on any page, like the Pen or Project editor, your Profile page, or the Dashboard) to temporarily turn off JavaScript. When you're ready to run the JavaScript again, remove <code>?turn_off_js=true</code> and refresh the page.<br><br>
+        <a href="https://blog.codepen.io/documentation/features/turn-off-javascript-in-previews/" target="_blank">How to Disable JavaScript Docs</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="question">How do I contact the creator of a Pen?</div>
+    <div class="answercont">
+      <div class="answer">
+        You can leave a comment on any public Pen. Click the "Comments" link in the Pen editor view, or visit the Details page.<br><br>
+        <a href="https://blog.codepen.io/documentation/faq/how-do-i-contact-the-creator-of-a-pen/" target="_blank">How to Contact Creator of a Pen Docs</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="question">What version of [library] does CodePen use?</div>
+    <div class="answercont">
+      <div class="answer">
+        We have our current list of library versions <a href="https://codepen.io/versions" target="_blank">here</a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="question">What are forks?</div>
+    <div class="answercont">
+      <div class="answer">
+        A fork is a complete copy of a Pen or Project that you can save to your own account and modify. Your forked copy comes with everything the original author wrote, including all of the code and any dependencies.<br><br>
+        <a href="https://blog.codepen.io/documentation/features/forks/" target="_blank">Learn More About Forks</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+
+<script src="js/faq.js"></script>
+
+</body>
+</html>
