@@ -24,31 +24,69 @@
   });
 
   // Dropdown on mouse hover
-  const $dropdown = $(".dropdown");
-  const $dropdownToggle = $(".dropdown-toggle");
-  const $dropdownMenu = $(".dropdown-menu");
-  const showClass = "show";
+  // const $dropdown = $(".dropdown");
+  // const $dropdownToggle = $(".dropdown-toggle");
+  // const $dropdownMenu = $(".dropdown-menu");
+  // const showClass = "show";
 
-  $(window).on("load resize", function () {
-    if (this.matchMedia("(min-width: 992px)").matches) {
-      $dropdown.hover(
-        function () {
-          const $this = $(this);
-          $this.addClass(showClass);
-          $this.find($dropdownToggle).attr("aria-expanded", "true");
-          $this.find($dropdownMenu).addClass(showClass);
-        },
-        function () {
-          const $this = $(this);
-          $this.removeClass(showClass);
-          $this.find($dropdownToggle).attr("aria-expanded", "false");
-          $this.find($dropdownMenu).removeClass(showClass);
+  // $(window).on("load resize", function () {
+  //   if (this.matchMedia("(min-width: 992px)").matches) {
+  //     $dropdown.hover(
+  //       function () {
+  //         const $this = $(this);
+  //         $this.addClass(showClass);
+  //         $this.find($dropdownToggle).attr("aria-expanded", "true");
+  //         $this.find($dropdownMenu).addClass(showClass);
+  //       },
+  //       function () {
+  //         const $this = $(this);
+  //         $this.removeClass(showClass);
+  //         $this.find($dropdownToggle).attr("aria-expanded", "false");
+  //         $this.find($dropdownMenu).removeClass(showClass);
+  //       }
+  //     );
+  //   } else {
+  //     $dropdown.off("mouseenter mouseleave");
+  //   }
+  // });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Toggle main dropdown
+    var academicsDropdownToggle = document.querySelector('#academicsDropdown');
+    var academicsDropdownMenu = academicsDropdownToggle.nextElementSibling;
+
+    academicsDropdownToggle.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (academicsDropdownMenu.style.display === 'block') {
+            academicsDropdownMenu.style.display = 'none';
+        } else {
+            academicsDropdownMenu.style.display = 'block';
         }
-      );
-    } else {
-      $dropdown.off("mouseenter mouseleave");
-    }
-  });
+    });
+
+    // Toggle nested dropdown for "People"
+    var peopleDropdownToggle = document.querySelector('#peopleDropdown');
+    var peopleDropdownMenu = peopleDropdownToggle.nextElementSibling;
+
+    peopleDropdownToggle.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (peopleDropdownMenu.style.display === 'block') {
+            peopleDropdownMenu.style.display = 'none';
+        } else {
+            peopleDropdownMenu.style.display = 'block';
+        }
+    });
+
+    // Close dropdowns if clicked outside
+    document.addEventListener('click', function(event) {
+        if (!academicsDropdownToggle.contains(event.target) && !academicsDropdownMenu.contains(event.target)) {
+            academicsDropdownMenu.style.display = 'none';
+        }
+        if (!peopleDropdownToggle.contains(event.target) && !peopleDropdownMenu.contains(event.target)) {
+            peopleDropdownMenu.style.display = 'none';
+        }
+    });
+});
 
   // Back to top button
   $(window).scroll(function () {
