@@ -84,6 +84,7 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+    /* left: 100%;/ */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -133,12 +134,14 @@
         opacity: 0;
         visibility: hidden;
         transition: .5s;
+        /* left: 100%; */
     }
 
     .navbar .dropdown-menu.fade-down {
         top: 100%;
         transform: rotateX(-75deg);
         transform-origin: 0% 0%;
+        /* left: 100%; */
     }
 
     .navbar .nav-item:hover .dropdown-menu {
@@ -147,6 +150,12 @@
         visibility: visible;
         transition: .5s;
         opacity: 1;
+        /* left: 100%; */
+    }
+
+    .nav-item.dropdown .dropdown-menu .dropdown-menu {
+        top: 0;
+        left: 100%;
     }
 }
 
