@@ -84,7 +84,6 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
-    /* left: 100%;/ */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -92,7 +91,7 @@
     padding: 25px 0;
     color: #FFFFFF;
     font-size: 15px;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     outline: none;
 }
 
@@ -134,14 +133,12 @@
         opacity: 0;
         visibility: hidden;
         transition: .5s;
-        /* left: 100%; */
     }
 
     .navbar .dropdown-menu.fade-down {
         top: 100%;
         transform: rotateX(-75deg);
         transform-origin: 0% 0%;
-        /* left: 100%; */
     }
 
     .navbar .nav-item:hover .dropdown-menu {
@@ -150,12 +147,6 @@
         visibility: visible;
         transition: .5s;
         opacity: 1;
-        /* left: 100%; */
-    }
-
-    .nav-item.dropdown .dropdown-menu .dropdown-menu {
-        top: 0;
-        left: 100%;
     }
 }
 
@@ -175,16 +166,16 @@
     }
 }
 
-/* .header-carousel .owl-nav {
+.header-carousel .owl-nav {
     position: absolute;
     top: 50%;
     right: 8%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-} */
+}
 
-/* .header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
     margin: 7px 0;
     width: 45px;
@@ -197,16 +188,16 @@
     border: 1px solid #FFFFFF;
     font-size: 22px;
     transition: .5s;
-} */
+}
 
-/* .header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
     background: var(--primary);
     border-color: var(--primary);
-} */
+}
 
 .page-header {
-    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/pagetop.avif);
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -441,14 +432,3 @@
     padding-right: 0;
     border-right: none;
 }
-
-
-
-
-
-
-
-
-
-
-
