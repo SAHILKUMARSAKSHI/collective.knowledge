@@ -236,6 +236,7 @@
 	
 	.dropdown-toggle::after {
 	  content: "▾";
+
 	}
   }
   
