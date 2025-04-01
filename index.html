@@ -30,6 +30,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/owl-carousel.css" rel="stylesheet">
+    <link href="css/crousel.css" rel="stylesheet">
 </head>
 
 <body>
@@ -111,47 +112,160 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/pagetop.avif" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(50, 61, 124, 0.7);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Upcoming Webinar</h5>
-                                <h1 class="display-2 animated slideInDown">GANDHI, ENVIRONMENT AND SUSTAINABILITY</h1>
-                                <p class="fs-5 text-white mb-4 pb-2 text-justify">
-                                    We are pleased to invite you to an enlightening webinar on "Gandhi, Environment, and Sustainability", organized by Collective Knowledge.
-                                </p>
-                                <a href="img/23 march 25 webinar.jpg" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">View Detail's</a>
-                                <a href="https://meet.google.com/qxh-ajfu-chw" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="carousel">
+        <div class="list">
+      
+          <div class="item" style="background-image: url(img/carousel-1.jpg);">
+            <div class="content">
+              <div class="title">SUNRISE ON PEAKS</div>
+              <div class="name">Sunrise</div>
+              <div class="des">Witness the serene beauty of the sunrise over
+                majestic
+                mountain peaks. A moment of pure tranquility.</div>
             </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/pagetop.avif" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(50, 60, 113, 0.7);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Upcoming Webinar</h5>
-                                <h1 class="display-2 animated slideInDown">GANDHI, ENVIRONMENT AND SUSTAINABILITY</h1>
-                                <p class="fs-5 text-white mb-4 pb-2 text-justify">
-                                    We are pleased to invite you to an enlightening webinar on "Gandhi, Environment, and Sustainability", organized by Collective Knowledge.
-                                </p>
-                                <a href="img/23 march 25 webinar.jpg" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">View Detail's</a>
-                                <a href="https://meet.google.com/qxh-ajfu-chw" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+      
+          <div class="item" style="background-image: url(img/carousel-2.jpg);">
+            <div class="content">
+              <div class="title">RUGGED ROCKS</div>
+              <div class="name">Rocky</div>
+              <div class="des">Explore the rugged beauty of barren rocky mountains.
+                A
+                testament to nature's raw power.</div>
+            </div>
+          </div>
+      
+          <div class="item" style="background-image: url(img/carousel-1.jpg);">
+            <div class="content">
+              <div class="title">FOREST PATHWAY</div>
+              <div class="name">Forest</div>
+              <div class="des">A peaceful trail through dense green forests. Perfect
+                for
+                reconnecting with nature.</div>
+            </div>
+          </div>
+      
+          <div class="item" style="background-image: url(img/carousel-2.jpg);">
+            <div class="content">
+              <div class="title">COLORFUL MEADOW</div>
+              <div class="name">Meadow</div>
+              <div class="des">A colorful meadow filled with butterflies and
+                blooming
+                flowers. Nature at its best.</div>
+            </div>
+          </div>
+      
+          <div class="item" style="background-image: url(img/carousel-1.jpg);">
+            <div class="content">
+              <div class="title">SERENE LAKE</div>
+              <div class="name">Lake</div>
+              <div class="des">A calm and serene lake surrounded by towering trees
+                and
+                mountains. A perfect escape.</div>
+            </div>
+          </div>
+      
+          <div class="item" style="background-image: url(img/carousel-2.jpg);">
+            <div class="content">
+              <div class="title">PEAKS IN THE CLOUDS</div>
+              <div class="name">Clouds</div>
+              <div class="des">Mountain peaks wrapped in clouds. A dreamy sight that
+                inspires awe and wonder.</div>
+            </div>
+          </div>
+        </div>
+      
+        <!--next prev button-->
+        <div class="arrows">
+          <button class="prev">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button class="next">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+      
+          <div class="slide-number"></div>
+        </div>
+      
+        <!-- time running -->
+        <div class="timeRunning"></div>
+      
+      </div>
+    
+    <!-- Carousel End -->
+
+
+    <div class="news-ticker">
+        <div class="ticker-container">
+            <div class="ticker-wrap">
+                <div class="ticker-label">LATEST</div>
+                <div class="ticker-content">
+                    <div class="ticker-item"><span>LATEST:</span> Stock markets reach all-time high as economic recovery continues</div>
+                    <div class="ticker-item"><span>POLITICS:</span> President to address nation tonight on new infrastructure plan</div>
+                    <div class="ticker-item breaking-news"><span>BREAKING:</span> Major earthquake reported in Pacific region - tsunami warning issued</div>
+                    <div class="ticker-item"><span>SPORTS:</span> National team advances to finals after stunning victory</div>
+                    <div class="ticker-item"><span>TECH:</span> New smartphone unveiled with revolutionary camera technology</div>
+                    <div class="ticker-item"><span>WEATHER:</span> Heatwave expected to continue through the weekend</div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Carousel End -->
+    
+    <style>
+        .news-ticker .ticker-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .news-ticker .ticker-wrap {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        
+        .news-ticker .ticker-label {
+            background-color: #c00;
+            color: white;
+            padding: 5px 15px;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .news-ticker .ticker-content {
+            display: inline-block;
+            animation: ticker 60s linear infinite;
+        }
+        
+        .news-ticker .ticker-item {
+            display: inline-block;
+            margin-right: 40px;
+            color: #fff;
+        }
+        
+        .news-ticker .ticker-item span {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        
+        @keyframes ticker {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        .news-ticker .breaking-news {
+            color: #ffcc00 !important;
+            font-weight: bold;
+        }
+    </style>
 
 
     <!-- Service Start -->
@@ -527,6 +641,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/crosel.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
